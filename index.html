@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Styles and Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="javascript.js"></script>
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside>
+      <ul class="Links">
+        <li onclick="Navigate(0)" class="activeLink">
+          <i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </li>
+        <li onclick="Navigate(1)">
+          <i class="fa-solid fa-user"></i>
+          <p>About Me</p>
+        </li>
+        <li onclick="Navigate(2)">
+          <i class="fa-solid fa-list"></i>
+          <p>Services</p>
+        </li>
+        <li onclick="Navigate(3)">
+          <i class="fa-solid fa-images"></i>
+          <p>Projects</p>
+        </li>
+        <li onclick="Navigate(4)">
+          <i class="fa-solid fa-comments"></i>
+          <p>Contact Me</p>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="SlideContainer swiper-wrapper">
+
+        <!-- Home Slide -->
+        <section class="swiper-slide home-slide">
+          <div class="HomeContent">
+            <h1>Hi! I'm <span class="stylized-name">Ashley</span>.</h1>
+            <h2>A <span class="professions">Web Developer</span></h2>
+            <p class="heroline">
+              A passionate Web Developer with a strong commitment to crafting stunning, user-friendly websites. I focus on combining aesthetics with functionality to deliver seamless digital experiences. With a keen eye for detail and a drive for continuous learning, I am dedicated to using the latest technologies to build responsive, interactive, and visually appealing websites that meet both user needs and business goals.
+
+
+            </p>
+            <div class="buttonGroup">
+              <button class="primary" onclick="NavigateToContact()">Contact Me</button>
+            </div>
+          </div>
+          <div class="SideImg">
+            <img src="ashley.png" alt="Main Screen" />
+          </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="swiper-slide about-me">
+          <h1 class="heading">About Me</h1>
+          <div class="resume">
+            <h2>Pakeng Ashley Mosehle</h2>
+            <p>Johannesburg, South Africa, 2191</p>
+            <p>+27 (72) 959-5023</p>
+            <p>ashleymosehle.p@gmail.com</p>
+
+            <h3>Professional Summary</h3>
+            <p>
+                Aspiring Software Developer with a strong foundation in technical support, network management, and asset administration. Although I haven’t worked as a full-time developer, I actively pursue side projects focused on software development, gaining hands-on experience with coding, database structures, and problem-solving. Adept at troubleshooting and optimizing IT systems, with a keen interest in developing efficient, scalable software solutions. Passionate about learning new technologies and enhancing my skills in programming, with a focus on delivering high-quality code and contributing to innovative software projects.
+            </p>
+
+            <h3>Skills</h3>
+            <ul>
+              <li>Programming Languages: Python, HTML, CSS and JavaScript</li>
+              <li>Cybersecurity Fundamentals</li>
+              <li>Database Structures</li>
+              <li>SQL (Basic Query Writing)</li>
+              <li>Power BI (Intermediate)</li>
+              <li>Asset Administration</li>
+              <li>Advanced MS Office & Excel</li>
+              <li>Technical Support</li>
+              <li>Windows & Mac OS</li>
+              <li>Cybersecurity Fundamentals</li>
+            </ul>
+
+            <h3>Work History</h3>
+            <p><strong>iOCO Infrastructure Services Pty Ltd - Customer Service Engineer I (2022 - Present)</strong></p>
+            <ul>
+                <li>Provided technical support to clients via phone, email, and remote desktop tools, resolving issues efficiently and ensuring high customer satisfaction.</li>
+                <li>Troubleshot and resolved hardware, software, and network issues, maintaining high first-call resolution rates and minimizing downtime.</li>
+                <li>Documented service requests, technical issues, and resolutions in a ticketing system, ensuring accurate records and timely follow-ups.</li>
+                <li>Monitored and managed system performance, identifying and addressing potential issues proactively to prevent system failures.</li>
+                <li>Collaborated with cross-functional teams to troubleshoot and resolve complex technical problems, offering clear solutions to non-technical users.</li>
+                <li>Assisted in training customers and staff on IT best practices, software use, and system maintenance, enhancing overall productivity.</li>
+                <li>Delivered on-site and remote support for installation, configuration, and maintenance of IT systems, ensuring seamless operation.</li>
+                <li>Managed IT asset inventories, ensuring proper documentation and tracking of hardware and software assets.</li>
+                <li>Conducted software and hardware upgrades, ensuring compatibility and optimizing system performance.</li>
+                <li>Provided continuous feedback to management on recurring technical issues and customer concerns, contributing to service improvements.</li>
+              </ul>
+              
+
+            <p><strong>UT Information Technologies - Field Support Technician (2020 - 2022)</strong></p>
+            <ul>
+                <li>Provided on-site technical support for hardware, software, and network issues, ensuring minimal downtime and seamless user experience.</li>
+                <li>Troubleshot and resolved complex technical issues for clients across various industries, including system failures, network connectivity issues, and application malfunctions.</li>
+                <li>Installed, configured, and maintained IT systems, including servers, workstations, and peripheral devices, ensuring proper setup and functionality.</li>
+                <li>Conducted regular system inspections and performed preventive maintenance on equipment to ensure optimal performance and avoid potential failures.</li>
+                <li>Managed hardware and software upgrades, ensuring compatibility and enhancing system performance.</li>
+                <li>Collaborated with remote support teams to escalate and resolve issues that could not be solved on-site, ensuring timely resolution.</li>
+                <li>Trained end-users on system use, best practices, and troubleshooting techniques to empower them to address minor issues independently.</li>
+                <li>Maintained accurate records of service requests, completed work, and inventory of IT assets, ensuring compliance and easy access to historical data.</li>
+                <li>Provided feedback to management on recurring technical problems and suggested improvements to internal systems and processes.</li>
+                <li>Ensured high customer satisfaction by maintaining professionalism and providing clear, effective solutions in a timely manner.</li>
+              </ul>
+
+              <p><strong>UT Information Technologies - Customer Service Engineer (2020 - 2022)</strong></p>
+            <ul>
+                <li>Provided on-site technical support for hardware, software, and network issues, ensuring minimal downtime and seamless user experience.</li>
+                <li>Troubleshot and resolved complex technical issues for clients across various industries, including system failures, network connectivity issues, and application malfunctions.</li>
+                <li>Installed, configured, and maintained IT systems, including servers, workstations, and peripheral devices, ensuring proper setup and functionality.</li>
+                <li>Conducted regular system inspections and performed preventive maintenance on equipment to ensure optimal performance and avoid potential failures.</li>
+                <li>Managed hardware and software upgrades, ensuring compatibility and enhancing system performance.</li>
+                <li>Collaborated with remote support teams to escalate and resolve issues that could not be solved on-site, ensuring timely resolution.</li>
+                <li>Trained end-users on system use, best practices, and troubleshooting techniques to empower them to address minor issues independently.</li>
+                <li>Maintained accurate records of service requests, completed work, and inventory of IT assets, ensuring compliance and easy access to historical data.</li>
+                <li>Provided feedback to management on recurring technical problems and suggested improvements to internal systems and processes.</li>
+                <li>Ensured high customer satisfaction by maintaining professionalism and providing clear, effective solutions in a timely manner.</li>
+              </ul>
+              
+
+            <h3>Education</h3>
+            <p>BSc Information Technology - Richfield Graduate Institute (2024 - Current)</p>
+            <p>Grade 12 (NSC) - Good Shepherd Model School (2013)</p>
+
+            <h3>Certifications</h3>
+            <ul>
+              <li>CompTIA Security+ SY0-601</li>
+              <li>CompTIA Security+ SY0-501</li>
+              <li>CompTIA A+</li>
+              <li>CCNA (ICND1 & ICND2)</li>
+              <li>NSC Matric</li>
+            </ul>
+
+            <h3>References</h3>
+            <p>Available upon request.</p>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="swiper-slide services">
+          <h1 class="heading">Services</h1>
+
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h2>Web Design</h2>
+            <p>I create visually appealing, user-friendly designs for all devices.</p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+            <h2>Web Development</h2>
+            <p>I build fully functional, dynamic websites from scratch.</p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h2>Computer Repairs</h2>
+            <p>Troubleshooting & repairs for hardware/software issues.</p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-image"></i></div>
+            <h2>Graphic Design</h2>
+            <p>Logos, branding, and graphics that elevate your brand.</p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h2>Software Development</h2>
+            <p>Custom applications tailored to your business needs.</p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+            <h2>Database Admin</h2>
+            <p>Secure, fast, and optimized database management.</p>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="swiper-slide">
+          <h1 class="heading">Projects</h1>
+          <p>Some of my previous work...</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="swiper-slide contactMe">
+          <h1 class="heading">Contact Me</h1>
+
+          <div class="contactinfo">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Mobile No:</h3>
+            <p>072 9595 023</p>
+          </div>
+
+          <div class="contactinfo">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Location:</h3>
+            <p>61 Katherine Street, Dennehof, Sandton, 2196</p>
+          </div>
+
+          <div class="contactinfo">
+            <i class="fa-regular fa-envelope"></i>
+            <h3>Email:</h3>
+            <p>ashleymosehle.p@gmail.com</p>
+          </div>
+
+          <div class="contactinfo">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Website:</h3>
+            <p>n/a</p>
+          </div>
+
+          <!-- Contact Form -->
+          <form>
+            <h2>Send Me A Message</h2>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea rows="10" placeholder="Type your message here..." required></textarea>
+            <button class="primary" type="submit">Send</button>
+
+            <!-- Social Links -->
+            <div class="SocialLinks">
+              <i class="fa-brands fa-codepen"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Theme Toggle -->
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onchange="toggleMode()" />
+      <div class="slider round"></div>
+    </label>
+  </div>
+
+  <footer>
+    <p>Copyright @ 2025 Pakeng Ashley Mosehle
